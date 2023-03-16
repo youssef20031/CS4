@@ -5,7 +5,7 @@ import model.collectibles.Vaccine;
 
 import java.util.ArrayList;
 
-public class Hero extends Character{
+public abstract class Hero extends Character{
     private int actionsAvailable;
     private int maxActions;
     private boolean specialAction;
