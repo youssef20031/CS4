@@ -22,7 +22,7 @@ import org.junit.Test;
 import model.characters.Zombie;
 import model.collectibles.Supply;
 import model.collectibles.Vaccine;
-import model.world.TrapCell;
+import model.world.*;
 
 @SuppressWarnings({ "rawtypes", "unchecked", "unused" })
 public class M1PublicTests {

@@ -12,7 +12,7 @@ import java.util.Objects;
 public class Game {
     public static ArrayList<Hero> availableHeroes;
     public static ArrayList<Hero> heroes;
-    public static ArrayList<Zombie> zombies;
+    public static ArrayList<Zombie> zombies = new ArrayList<>(10);
     public static Cell[][] map;
 
     public static void loadHeroes(String filePath) throws IOException {
