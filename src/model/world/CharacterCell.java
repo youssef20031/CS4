@@ -9,4 +9,20 @@ public class CharacterCell extends Cell{
         this.character = character;
         this.isSafe = isSafe;
     }
+
+    public Character getCharacter() {
+        return character;
+    }
+
+    public void setCharacter(Character character) {
+        this.character = character;
+    }
+
+    public boolean isSafe() {
+        return isSafe;
+    }
+
+    public void setSafe(boolean safe) {
+        isSafe = safe;
+    }
 }
