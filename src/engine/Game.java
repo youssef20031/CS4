@@ -18,6 +18,7 @@ public class Game {
     public static void loadHeroes(String filePath) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(filePath));
         String s = "";
+        heroes = new ArrayList<>();
         while ((s = br.readLine()) != null){
             String [] a = s.split(",");
             if (Objects.equals(a[1], "FIGH")){
@@ -26,11 +27,11 @@ public class Game {
             } else if (Objects.equals(a[1], "EXP")){
                 Explorer x = new Explorer(a[0],Integer.parseInt(a[2]),Integer.parseInt(a[4]),Integer.parseInt(a[3]));
                 heroes.add(x);
-            }else if(Objects.equals(a[1], "MED")){
+            }else{
                 Medic x = new Medic(a[0],Integer.parseInt(a[2]),Integer.parseInt(a[4]),Integer.parseInt(a[3]));
                 heroes.add(x);
             }
-
+            availableHeroes = heroes;
 
         }
     }
