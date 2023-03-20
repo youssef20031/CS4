@@ -7,12 +7,13 @@ public abstract class Character {
     private Point location;
     private int maxHp;
     private int currentHp;
-    private int attackDmg;
+    private final int attackDmg;
     private Character target;
 
     public Character(String name, int maxHp, int attackDmg){
         this.name = name;
         this.maxHp = maxHp;
+        this.currentHp = maxHp;
         this.attackDmg = attackDmg;
     }
 

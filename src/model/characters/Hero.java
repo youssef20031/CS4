@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public abstract class Hero extends Character{
     private int actionsAvailable;
-    private int maxActions;
+    private final int maxActions;
     private boolean specialAction;
     private ArrayList<Vaccine> vaccineInventory;
     private ArrayList<Supply> supplyInventory;
@@ -15,6 +15,9 @@ public abstract class Hero extends Character{
     public Hero(String name, int maxHp, int attackDmg, int maxActions){
         super(name, maxHp, attackDmg);
         this.maxActions = maxActions;
+        this.actionsAvailable = maxActions;
+        this.vaccineInventory = new ArrayList<>();
+        this.supplyInventory = new ArrayList<>();
     }
 
     public int getMaxActions() {
