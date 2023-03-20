@@ -3,7 +3,7 @@ package model.world;
 import java.util.Random;
 
 public class TrapCell extends Cell{
-    int trapDamage;
+    private int trapDamage;
 
     public TrapCell() {
         super();

@@ -2,7 +2,7 @@ package model.world;
 import model.collectibles.Collectible;
 
 public class CollectibleCell extends Cell{
-    Collectible collectible;
+    private Collectible collectible;
 
     public CollectibleCell(Collectible collectible) {
         super();

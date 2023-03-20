@@ -1,13 +1,13 @@
 package engine;
 
-import model.characters.Hero;
-import model.characters.Zombie;
+import model.characters.*;
 import model.world.Cell;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Game {
     public static ArrayList<Hero> availableHeroes;
@@ -20,6 +20,17 @@ public class Game {
         String s = "";
         while ((s = br.readLine()) != null){
             String [] a = s.split(",");
+            if (Objects.equals(a[1], "FIGH")){
+                Fighter x = new Fighter(a[0],Integer.parseInt(a[2]),Integer.parseInt(a[4]),Integer.parseInt(a[3]));
+                heroes.add(x);
+            } else if (Objects.equals(a[1], "EXP")){
+                Explorer x = new Explorer(a[0],Integer.parseInt(a[2]),Integer.parseInt(a[4]),Integer.parseInt(a[3]));
+                heroes.add(x);
+            }else if(Objects.equals(a[1], "MED")){
+                Medic x = new Medic(a[0],Integer.parseInt(a[2]),Integer.parseInt(a[4]),Integer.parseInt(a[3]));
+                heroes.add(x);
+            }
+
 
         }
     }
