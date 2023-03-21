@@ -34,6 +34,7 @@ public class Game {
             availableHeroes = heroes;
 
         }
+        br.close();
     }
 
 }
