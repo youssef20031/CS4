@@ -31,8 +31,6 @@ public class Game {
                 Medic x = new Medic(a[0],Integer.parseInt(a[2]),Integer.parseInt(a[4]),Integer.parseInt(a[3]));
                 availableHeroes.add(x);
             }
-
-
         }
         br.close();
     }
