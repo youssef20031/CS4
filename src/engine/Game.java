@@ -98,10 +98,10 @@ public class Game {
         heroes.add(h);
         availableHeroes.remove(h);
         map[0][0] = new CharacterCell(h);
-        /*cellAdder(5,0);
+        cellAdder(5,0);
         cellAdder(5,1);
-        cellAdder(5,2);*/
-        int i = 0;
+        cellAdder(5,2);
+        /*int i = 0;
         while (i < 5) {
             int a = (int) (Math.random() * map.length);
             int b = (int) (Math.random() * map.length);
@@ -133,9 +133,9 @@ public class Game {
                     k++;
                 }
             }
-        }
-        //zombieAdder(10);
-        int f = 0;
+        }*/
+        zombieAdder(10);
+        /*int f = 0;
         while (f < 10) {
             int a = (int) (Math.random() * map.length);
             int b = (int) (Math.random() * map.length);
@@ -148,7 +148,7 @@ public class Game {
                     f++;
                 }
             }
-        }
+        }*/
         /*map[0][0].setVisible(true);
         map[0][1].setVisible(true);
         map[1][0].setVisible(true);
